@@ -23,7 +23,7 @@ import torch
 import torch.nn.functional as F
 import torch.nn as nn
 
-from pytorch_transformers.optimization import (
+from transformers.optimization import (
     AdamW,
     WarmupConstantSchedule,
     WarmupLinearSchedule,

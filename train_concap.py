@@ -23,9 +23,10 @@ from torch.utils.data import DataLoader, Dataset, RandomSampler
 from torch.utils.data.distributed import DistributedSampler
 from tensorboardX import SummaryWriter
 
-from pytorch_transformers.tokenization_bert import BertTokenizer
-from pytorch_transformers.tokenization_roberta import RobertaTokenizer
-from pytorch_transformers.optimization import AdamW, WarmupLinearSchedule
+from transformers.tokenization_bert import BertTokenizer
+from transformers.tokenization_roberta import RobertaTokenizer
+from transformers.optimization import AdamW, WarmupLinearSchedule
+
 
 import vilbert.utils as utils
 from vilbert.datasets import ConceptCapLoaderTrain, ConceptCapLoaderVal
