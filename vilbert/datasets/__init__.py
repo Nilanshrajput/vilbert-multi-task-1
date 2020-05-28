@@ -19,7 +19,6 @@ from .visual_entailment_dataset import VisualEntailmentDataset
 from .refer_dense_caption import ReferDenseCpationDataset
 from .visual_genome_dataset import GenomeQAClassificationDataset
 from .gqa_dataset import GQAClassificationDataset
-from .guesswhat_pointing_dataset import GuessWhatPointingDataset
 from .flickr_grounding_dataset import FlickrGroundingDataset
 
 # from .flickr_retreival_dataset import FlickrRetreivalDatasetTrain, FlickrRetreivalDatasetVal
@@ -38,7 +37,6 @@ __all__ = [
     "VisualEntailmentDataset",
     "GQAClassificationDataset",
     "ConceptCapLoaderRetrieval",
-    "GuessWhatPointingDataset",
     "FlickrGroundingDataset",
     "",
 ]
@@ -55,7 +53,6 @@ DatasetMapTrain = {
     "VisualEntailment": VisualEntailmentDataset,
     "GQA": GQAClassificationDataset,
     "Foil": FoilClassificationDataset,
-    "GuessWhatPointing": GuessWhatPointingDataset,
     "FlickrGrounding": FlickrGroundingDataset,
 }
 
@@ -72,6 +69,5 @@ DatasetMapEval = {
     "VisualEntailment": VisualEntailmentDataset,
     "GQA": GQAClassificationDataset,
     "Foil": FoilClassificationDataset,
-    "GuessWhatPointing": GuessWhatPointingDataset,
     "FlickrGrounding": FlickrGroundingDataset,
 }
